@@ -199,8 +199,8 @@
                 auxGroup.add(createAxisFrame(size * 0.0));
             }
             else if (type === 'cylinder') {
-                const radius = 0.9;
-                const height = 2.4;
+                const radius = 1.0;
+                const height = 2.0;
                 mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 48), createMeshMaterial());
 
                 auxGroup.add(createAxisFrame(radius * 1.05));
