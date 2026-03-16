@@ -190,7 +190,7 @@
                 auxGroup.add(createAxisFrame(1));
             }
             else if (type === 'cube') {
-                const size = 1.8;
+                const size = 2.0;
                 mesh = new THREE.Mesh(new THREE.BoxGeometry(size, size, size), createMeshMaterial());
                 auxGroup.add(new THREE.LineSegments(
                     new THREE.EdgesGeometry(mesh.geometry),
