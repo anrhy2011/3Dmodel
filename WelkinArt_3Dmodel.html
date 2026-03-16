@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>簡易3D幾何透視教學 </title>
+    <title>【Welkin Art】維科數位創藝｜3D幾何模型</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <style>
         body { 
@@ -60,7 +60,7 @@
     </style>
 </head>
 <body>
-    <header>簡易3D幾何透視教學（平板觸控完整支援）</header>
+    <header>【Welkin Art】維科數位創藝｜3D幾何模型 </header>
     <div class="main">
         <div id="canvas-container">
             <canvas id="three-canvas"></canvas>
@@ -131,7 +131,8 @@
 
         const models = {};
 
-        function createMeshMaterial(opacity = 0.85) {
+
+        function createMeshMaterial(opacity = 0.3) {
             return new THREE.MeshPhongMaterial({ color: 0xffffff, shininess: 30, transparent: true, opacity, side: THREE.DoubleSide });
         }
 
@@ -142,7 +143,7 @@
             const axes = [
                 { dir: [len,0,0], col: 0xff5050 },
                 { dir: [0,len,0], col: 0x50ff50 },
-                { dir: [0,0,len], col: 0x5050ff }
+                { dir: [0,0,len], col: 0xffff50 }
             ];
             axes.forEach(a => {
                 const pts = [new THREE.Vector3(), new THREE.Vector3(...a.dir)];
