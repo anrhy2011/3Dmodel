@@ -202,8 +202,7 @@
                 const radius = 0.9;
                 const height = 2.4;
                 mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 48), createMeshMaterial());
-                auxGroup.add(createCircleEdge(radius, height / 2));
-                auxGroup.add(createCircleEdge(radius, -height / 2));
+
                 auxGroup.add(createAxisFrame(radius * 1.05));
             }
             else if (type === 'prism') {
